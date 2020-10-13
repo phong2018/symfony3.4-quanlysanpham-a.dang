@@ -33,3 +33,8 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    # xac dinh cho service cho interface khi co nhieu service implement
+    AppBundle\Contract\Repository\ProductRepoInterface:
+        class: AppBundle\Repository\ApiProductRepository
+    AppBundle\Contract\Service\CrudProductServiceInterface:
+        class: AppBundle\Services\CrudProductService

@@ -1,0 +1,16 @@
+<h1>Edit Category</h1>
+
+<div class="jumbotron">
+  {{ form_start(edit_form, {'attr': {'class': 'form-inline'}}) }}
+  <div>
+    <label class="col-md-2">Name</label>
+    {{ form_widget(edit_form.title, {'attr': {'class': 'form-control'}}) }}
+  </div>
+  <input class="btn btn-success" type="submit" value="Edit category" />
+  {{ form_end(edit_form) }}
+  <hr>
+  <div>
+    <a class="btn btn-default" href="{{ path('category_index') }}">Back to the list</a>
+
+  </div>
+</div>
